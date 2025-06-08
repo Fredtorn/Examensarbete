@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-primary: #00421B;
+  --font-roboto: "Roboto", sans-serif; 
+  --font-shippori-mincho: "Shippori Mincho", serif;
+}
